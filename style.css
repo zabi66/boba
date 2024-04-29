@@ -1,0 +1,194 @@
+@keyframes transitionIn{
+    from{
+        opacity: 0;
+        transform: rotateX(-10deg);
+    }
+    to{
+        opacity: 1;
+        transform: rotateX(0);
+    }
+  } 
+body {
+    animation: transitionIn 4s; 
+    transition: background-color 1s ease; /* Smooth transition */
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+    height: 100vh; /* Full height page */
+    margin: 0;
+}
+h1 {
+    font-family: 'Bubblegum Sans', cursive; /* Google Font for bubble writing */
+    font-size: 6em; /* Increased font size */
+    color: #000000; /* Set the text color to black */
+    background-image: linear-gradient(to top, #d3c8f0 33%, transparent 33%); /* 1/3rd fill with soft purple */
+    -webkit-background-clip: text; /* Clip the background gradient to the text */
+    background-clip: text;
+    text-shadow: 2px 2px 4px #000; /* Black shadow */
+    -webkit-text-fill-color: #8fd9b7; /* Chrome, Safari */
+    text-fill-color: transparent; /* Standard: Fallback for other browsers */
+    border: none; /* No border around the text itself */
+    -webkit-text-stroke: 2px black; /* Black border around the letters */
+    text-stroke: 2px black; /* Black border around the letters for browsers that support it */
+    padding: 5px;
+}
+
+.fire-btn {
+    background: #90ee90;
+    color: #000;
+    font-weight: bold;
+    font-size: 20px;
+    padding: 8px 32px;
+    border: none;
+    cursor: pointer;
+  }
+.fire-btn{
+text-decoration-color: #000;
+width: 50px;
+height: 50px;
+top:30%;
+position: absolute;
+left: 70%;
+margin-top: -45px;
+margin-left: -50px;
+border-radius: 5px;
+background: none;
+cursor: pointer;
+transition: background 0.5s ease;
+}
+.fire-btn:hover{
+	box-shadow: 2px 2px 5px rgb(22 147 156); /* Button shadow */
+	background-colour: red;
+}
+.active#heart:before,.active#heart:after{
+	background: red !important;
+}
+#heart {
+    width: 100px;
+    height: 90px;
+    transition: background 0.5s ease;
+    h3{
+        position:fixed;
+      top: 32%;
+      left: 68%;
+    
+    
+    }
+}
+#heart:before,
+#heart:after {
+	transition: background 0.5s ease;
+    position: absolute;
+    content: "";
+    left: 50px;
+    top: 0;
+    width: 50px;
+    height: 80px;
+    background: rgb(224 86 86);
+    border-radius: 50px 50px 0 0;
+    transform: rotate(-45deg);
+    transform-origin: 0 100%;
+}
+#heart:after {
+    left: 0;
+    transform: rotate(45deg);
+    transform-origin :100% 100%;
+}
+
+        /* Hidden text element initially */
+        #message {
+                display: none;
+                font-size: 1.5em;
+                color: #333; /* Dark gray */
+                margin-top: 20px; /* Space above the text */
+                font-family: 'Bubblegum Sans', cursive; /* Google Font for bubble writing */
+                font-size: 5em; /* Increase font size */
+                -webkit-text-fill-color: #a68be3; /* Soft purple color for Webkit browsers */
+                -webkit-text-stroke: 2px #666; /* Soft black border for Webkit browsers */
+                text-stroke: 2px #666; /* Soft black border for others */
+                position: relative;
+                top: 35%;
+                left: -130%;
+                .boba-cup {
+                    align-items: center;
+                    justify-content: center;
+                    text-align: center;
+                    margin: auto;
+                     position: absolute;
+                    top: 190%;
+                    left: 60%;
+                    }
+                    
+                    .lid {
+                    width: 200px;
+                    height: 100px;
+                    margin: auto;
+                    border-top-left-radius: 100px;
+                    border-top-right-radius: 100px;
+                    border: 5px solid black;
+                    border-bottom: 0;
+                    box-sizing: border-box;
+                    background-color: #80dbff;
+                    }
+                    
+                    
+                    .cup {
+                    border: 5px solid black;
+                    border-top: 3px solid black;
+                    width: 150px;
+                    background-color: #e066ff;
+                    margin: auto;
+                    height: 200px;
+                    margin-top: 35px;
+                    z-index: -1;
+                    transform: perspective(10px) rotateX(-1deg);
+                    }
+                    
+                    .straw {
+                    z-index: -1;
+                    border: 5px solid black;
+                    width: 20px;
+                    height: 120px;
+                    background-color: #ff80aa;
+                    position: absolute;
+                    left: 89px;
+                    top: -50px;
+                    transform: rotate(15deg);
+                    }
+                    
+                    .pearl {
+                    border-radius: 50%;
+                    background-color: black;
+                    width: 20px;
+                    height: 20px;
+                    position: absolute;
+                    }
+                    
+                    .one {
+                    left: 115px;
+                    top: 94px;
+                    }
+                    
+                    .two {
+                    left: 90px;
+                    top: 140px;
+                    height: 22px;
+                    }
+                    
+                    .three {
+                    left: 20px;
+                    top: 90px;
+                    }
+                    
+                    .four {
+                    left: 40px;
+                    top: 130px;
+                    height: 22px;
+                    }
+                    
+                    .five {
+                    left: 70px;
+                    top: 80px;
+                    }
+            
+        }
